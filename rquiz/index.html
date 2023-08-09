@@ -1,1 +1,47 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Example</title>
+  <!-- Подключение Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Боковая панель -->
+      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Страница 1
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Страница 2
+              </a>
+            </li>
+            <!-- Добавьте дополнительные элементы меню по вашему усмотрению -->
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Основное содержимое -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <!-- Ваш контент будет здесь -->
+      </main>
+    </div>
+  </div>
+
+  <!-- Подключение Bootstrap JS (необходимо для некоторых компонентов) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
