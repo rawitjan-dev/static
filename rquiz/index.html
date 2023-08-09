@@ -3,45 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar Example</title>
-  <!-- Подключение Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Sidebar с Bootstrap</title>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Боковая панель -->
-      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-        <div class="position-sticky">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Страница 1
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Страница 2
-              </a>
-            </li>
-            <!-- Добавьте дополнительные элементы меню по вашему усмотрению -->
-          </ul>
+
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Sidebar</div>
+        <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action bg-light">Item 1</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Item 2</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Item 3</a>
         </div>
-      </nav>
-
-      <!-- Основное содержимое -->
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <!-- Ваш контент будет здесь -->
-      </main>
     </div>
-  </div>
+    <!-- /#sidebar-wrapper -->
 
-  <!-- Подключение Bootstrap JS (необходимо для некоторых компонентов) -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <h1 class="mt-4">Main Content</h1>
+            <p>This is the main content area.</p>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
